@@ -1,25 +1,20 @@
-#include <iostream> 
-#include <vector>
+#include<vector>
+#include <iostream>
 using namespace std;
 
-void display(vector<int> v){
-    for(int i=0;i<v.size();i++){
-        cout<<v[i]<<' ';
+void printVec(vector<int> &v){
+    for (int i = 0; i < v.size(); i++){
+       cout<<v[i]<<" ";
     }
-    cout<<endl;   
+    cout<<endl;
 }
 
 int main(){
-    vector<int> vec1;
-    int element;
-        int size;
-        cout<<"enter size";
-        cin>>size;
-    for(int i=0;i<size;i++){
-        cout<<"enter number"<<" ";
-        cin>>element;
-        vec1.push_back(element);
-    }
-    display(vec1);
-    return 0;
+    vector <int> v;
+    v.push_back(3);
+    v.push_back(2);
+    v.push_back(1);
+    printVec(v);
+    v.pop_back();
+    printVec(v);
 }
