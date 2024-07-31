@@ -10,7 +10,7 @@ int main(){
         cin>>m;
         arr[i]=m;
     }
-    sort(arr[0],arr[n]);
+    sort(arr,arr+n);
     for(int i = 0; i < n; i++){
         cout<<arr[i]<<" ";
     }
