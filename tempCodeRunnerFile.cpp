@@ -1,0 +1,1 @@
+buy = prices[i]
