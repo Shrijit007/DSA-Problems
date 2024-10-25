@@ -2,7 +2,9 @@
 using namespace std;
 
 class StackViaQueue{
+    private:
     queue<int> q;
+    public:
     void push(int x){
         int s = q.size();
         q.push(x);
@@ -21,3 +23,18 @@ class StackViaQueue{
         return q.size();
     }
 };
+
+int main(){
+    StackViaQueue s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    cout << s.top() << endl;
+    s.pop();
+    cout << s.top() << endl;
+    cout << s.size() << endl;
+    s.pop();
+    s.pop();
+    cout << s.size() << endl;
+    return 0;
+}
